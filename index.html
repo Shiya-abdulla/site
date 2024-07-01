@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .n{
+            position: sticky;
+            top: 0px;
+            z-index: 2;
+        }
+     
+     .hh{
+            position: absolute;
+            left: 148px;
+            top: 164px;
+            opacity: 2;
+        }
+        .zz{
+            
+            position: absolute;
+            left: 148px;
+            top: 270px;
+            opacity: 2;
+
+        }
+        .d-flex{
+            position: absolute;
+            left: 148px;
+            top: 390px;
+            opacity: 2;
+
+        }
+        .i1{
+            position: absolute;
+            left: 604px;
+            top: 200px;
+        }
+        .card{
+            transition: 1s;
+        }
+        .card:hover{
+            transform: scale(1.05);
+            box-shadow: 10px 10px 8px #888888;
+        }
+        .btn-white:hover{
+            background-color: orange;
+        }
+        @media(min-width:320px ) and (max-width:750px){
+            .jj{
+                display: none;
+            }
+            .ddd{
+                display: none;
+            }
+
+        }
+    </style>
+
+</head>
+<div>
+    <div class="n mb-2">
+        <nav class="navbar navbar-expand-lg bg-white ">
+            <div class="container-fluid bg-white">
+              <a class="navbar-brand fs-1 ms-5" href="#" style="color: greenyellow;"><h1>Fruitables</h1></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 200px;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Shop Details</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Shop</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Pages
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contacts</a>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li> -->
+                </ul>
+                <!-- <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5">
+                    <li class="nav-item ms-3">
+                      <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-magnifying-glass fa-2x" style="color: #25d028;"></i></a>
+                    </li>
+                    <li class="nav-item ms-3">
+                      <a class="nav-link" href="#"><i class="fa-solid fa-bag-shopping fa-2x" style="color: #1acb2f;"></i></a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-user fa-2x" style="color: #18cd24;"></i></a>
+                      </li>
+                    </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+
+    <div class="ban mb-5" style="width: 100%;">
+        <img src="./imgs/back2.jpg" alt="" style="opacity: 0.3; width: 100%; height: 500px;">
+        <div class="row">
+        <div class="col-lg-6">
+            <h4  class="hh" style="color: orange; margin-top: 70px;">100% Organic Foods</h4>
+            <h1  class="zz" style="color: green; ">Organic Veggies & <br>Fruit Foods</h1>
+            <form class="d-flex" role="search">
+                  <input class="form-control ddd " type="search" placeholder="Search" aria-label="Search" style="border-radius: 20px; width: 280px;">
+                  <button class=" ddd btn btn-outline-success" type="submit" style="background-color: #1acb2f; border-radius: 20px; color: white;">Search</button>
+                </form>
+
+        </div>
+        <div class="col-lg-6 jj">
+            <img  src="./imgs/ban1.jpg" alt="" style="width: 500px; margin-left: 100px; border-radius: 20px; " class="i1">
+        </div>
+    </div>
+    </div>
+
+    <div class="crd1 ms-5 mb-5">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="card text-center mt-5 mb-5  bg-light" style="width: 18rem;">
+                    <i class="fa-solid fa-truck-fast fa-5x mt-5" style="color: #c8701e; "></i>
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Free Shipping</h5>
+                      <p class="card-text mb-5">Free on order $300</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="col-lg-3">
+                    <div class="card text-center mt-5 mb-5  bg-light" style="width: 18rem;">
+                        <i class="fa-solid fa-user fa-5x mt-5 " style="color: #c8701e;"></i>
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Free Shipping</h5>
+                          <p class="card-text mb-5">Free on order $300</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="col-lg-3">
+                    <div class="card text-center mt-5 mb-5 bg-light" style="width: 18rem;">
+                        <i class="fa-solid fa-right-left fa-5x mt-5"style="color: #c8701e; "></i>
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Free Shipping</h5>
+                          <p class="card-text mb-5">Free on order $300</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="col-lg-3">
+                    <div class="card text-center mt-5 mb-5  bg-light" style="width: 18rem;">
+                        <i class="fa-solid fa-phone  fa-5x mt-5" style="color: #c8701e;style="color: #c8701e;></i>
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Free Shipping</h5>
+                          <p class="card-text mb-5">Free on order $300</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="org mt-5">
+        <h2 class="mt-5 ms-5">Our Organic <br> products</h2>
+        <div class="row">
+        <div class="col-lg-3">
+            <div class="card ms-4" style="width: 18rem; border:solid orange;">
+                <img src="./imgs/grapes.jpg" class="card-img-top" alt="..." style="height: 200px;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Grapes</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iure iste pariatur officiis dicta illo saepe temporibus, necessitatibus natus voluptate nisi quae praesentium dolor. Recusandae laudantium ea ipsum possimus ipsa!</p>
+                  <h5>$499/ kg</h5>
+                  <a href="#" class="btn btn-white"  style="border: solid orange; border-radius: 20px;"><i class="fa-solid fa-cart-shopping" style="color: #40b329;"></i>Add cart</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card ms-2" style="width: 18rem; border:solid orange; ">
+                <img src="./imgs/grapes.jpg" class="card-img-top" alt="..." style="height: 200px;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Grapes</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iure iste pariatur officiis dicta illo saepe temporibus, necessitatibus natus voluptate nisi quae praesentium dolor. Recusandae laudantium ea ipsum possimus ipsa!</p>
+                  <h5>$499/ kg</h5>
+                  <a href="#" class="btn btn-white"  style="border: solid orange; border-radius: 20px;"><i class="fa-solid fa-cart-shopping" style="color: #40b329;"></i>Add cart</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card ms-2" style="width: 18rem; border:solid orange;">
+                <img src="./imgs/resp.jpg" class="card-img-top" alt="..." style="height: 200px;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Resberries</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iure iste pariatur officiis dicta illo saepe temporibus, necessitatibus natus voluptate nisi quae praesentium dolor. Recusandae laudantium ea ipsum possimus ipsa!</p>
+                  <h5>$499/ kg</h5>
+                  <a href="#" class="btn btn-white" style="border: solid orange; border-radius: 20px;"><i class="fa-solid fa-cart-shopping" style="color: #40b329;"></i>Add cart</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card ms-2" style="width: 18rem; border:solid orange;">
+                <img src="./imgs/apri.jpg" class="card-img-top" alt="..." style="height: 200px;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Apricots</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iure iste pariatur officiis dicta illo saepe temporibus, necessitatibus natus voluptate nisi quae praesentium dolor. Recusandae laudantium ea ipsum possimus ipsa!</p>
+                  <h5>$499/ kg</h5>
+                  <a href="#" class=" btn btn-white"  style="border: solid orange; border-radius: 20px;"><i class="fa-solid fa-cart-shopping" style="color: #40b329;"></i>Add cart</a>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-lg-3">
+            <div class="card ms-4" style="width: 18rem; border:solid orange;">
+                <img src="./imgs/banana.jpg" class="card-img-top" alt="..." style="height: 200px;">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Banana</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iure iste pariatur officiis dicta illo saepe temporibus, necessitatibus natus voluptate nisi quae praesentium dolor. Recusandae laudantium ea ipsum possimus ipsa!</p>
+                  <h5>$499/ kg</h5>
+                  <a href="#" class="btn btn-white"  style="border: solid orange; border-radius: 20px;"><i class="fa-solid fa-cart-shopping" style="color: #40b329;"></i>Add cart</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card ms-2" style="width: 18rem; border:solid orange; ">
+                <img src="./imgs/orange.jpg" class="card-img-top" alt="..." style="height: 200px;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Orange</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iure iste pariatur officiis dicta illo saepe temporibus, necessitatibus natus voluptate nisi quae praesentium dolor. Recusandae laudantium ea ipsum possimus ipsa!</p>
+                  <h5>$499/ kg</h5>
+                  <a href="#" class="btn btn-white"  style="border: solid orange; border-radius: 20px;"><i class="fa-solid fa-cart-shopping" style="color: #40b329;"></i>Add cart</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card ms-2" style="width: 18rem; border:solid orange;">
+                <img src="./imgs/resp.jpg" class="card-img-top" alt="..." style="height: 200px;">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Resberries</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iure iste pariatur officiis dicta illo saepe temporibus, necessitatibus natus voluptate nisi quae praesentium dolor. Recusandae laudantium ea ipsum possimus ipsa!</p>
+                  <h5>$499/ kg</h5>
+                  <a href="#" class="btn btn-white" style="border: solid orange; border-radius: 20px;"><i class="fa-solid fa-cart-shopping" style="color: #40b329;"></i>Add cart</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card ms-2 bg-light" style="width: 18rem; border:solid orange;">
+                <img src="./imgs/grp2.jpg" class="card-img-top" alt="..." style="height: 200px;">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Grapes</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iure iste pariatur officiis dicta illo saepe temporibus, necessitatibus natus voluptate nisi quae praesentium dolor. Recusandae laudantium ea ipsum possimus ipsa!</p>
+                  <h5>$499/ kg</h5>
+                  <a href="#" class="btn btn-white"  style="border: solid orange; border-radius: 20px;"><i class="fa-solid fa-cart-shopping" style="color: #40b329;"></i>Add cart</a>
+                </div>
+              </div>
+        </div>
+    </div>
+
+
+         
+    </div>
+
+    <div class="banner mt-5 mb-5">
+        <img src="./imgs/offer.jpg" alt="" style="width: 100%; margin-top: 50px;">
+    </div>
+
+<div class="best ms-5 mb-5">
+
+    <h1 class="text-center mt-5"><b>Bestseller  products</b></h1>
+    <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum qui culpa <br>ad ullam dolores minus dolore facere fugiat invento</p>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card mb-3 bg-light" style="max-width: 400px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./imgs/g1.avif" class="img-fluid rounded-start " alt="..." width="100%" height="500px">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Grapes</h5>
+                  <p class="card-text"><i class="fa-solid fa-star" style="color: #23c021;"></i><i class="fa-solid fa-star" style="color: #23c021;"></i><i class="fa-solid fa-star" style="color: #23c021;"></i><i class="fa-solid fa-star" style="color: #23c021;"></i><i class="fa-solid fa-star" style="color: #23c021;"></i></p>
+                  <p class="card-text">$3.12</p>
+                  <a href="#" class="btn btn-white"  style="border: solid orange; border-radius: 20px;"><i class="fa-solid fa-cart-shopping" style="color: #40b329;"></i>Add cart</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card mb-3" style="max-width: 400px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./imgs/b1.jpg" class="img-fluid rounded-start " alt="..." width="100%" height="500px">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Banana</h5>
+                  <p class="card-text"><i class="fa-solid fa-star" style="color: #23c021;"></i><i class="fa-solid fa-star" style="color: #23c021;"></i><i class="fa-solid fa-star" style="color: #23c021;"></i><i class="fa-solid fa-star" style="color: #23c021;"></i><i class="fa-solid fa-star" style="color: #23c021;"></i></p>
+                  <p class="card-text">$3.12</p>
+                  <a href="#" class="btn btn-white"  style="border: solid orange; border-radius: 20px;"><i class="fa-solid fa-cart-shopping" style="color: #40b329;"></i>Add cart</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+     
+      </div>
+      <div class="col-lg-4">
+        <div class="card mb-4" style="max-width: 400px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./imgs/o1.jpg" class="img-fluid rounded-start " alt="..." width="100%" height="500px">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Orange</h5>
+                  <p class="card-text"><i class="fa-solid fa-star" style="color: #23c021;"></i><i class="fa-solid fa-star" style="color: #23c021;"></i><i class="fa-solid fa-star" style="color: #23c021;"></i><i class="fa-solid fa-star" style="color: #23c021;"></i><i class="fa-solid fa-star" style="color: #23c021;"></i></p>
+                  <p class="card-text">$3.12</p>
+                  <a href="#" class="btn btn-white"  style="border: solid orange; border-radius: 20px;"><i class="fa-solid fa-cart-shopping" style="color: #40b329;"></i>Add cart</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>
+
+    </div>
+    <div class="row ms-5 mb-5 ">
+        <div class="col-lg-4">
+          <div class="card mb-3 bg-light" style="max-width: 400px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="./imgs/g1.avif" class="img-fluid rounded-start " alt="..." width="100%" height="500px">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Grapes</h5>
+                    <p class="card-text"><i class="fa-solid fa-star" style="color: #23c021;"></i><i class="fa-solid fa-star" style="color: #23c021;"></i><i class="fa-solid fa-star" style="color: #23c021;"></i><i class="fa-solid fa-star" style="color: #23c021;"></i><i class="fa-solid fa-star" style="color: #23c021;"></i></p>
+                    <p class="card-text">$3.12</p>
+                    <a href="#" class="btn btn-white"  style="border: solid orange; border-radius: 20px;"><i class="fa-solid fa-cart-shopping" style="color: #40b329;"></i>Add cart</a>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card mb-3" style="max-width: 400px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="./imgs/b1.jpg" class="img-fluid rounded-start " alt="..." width="100%" height="500px">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Banana</h5>
+                    <p class="card-text"><i class="fa-solid fa-star" style="color: #23c021;"></i><i class="fa-solid fa-star" style="color: #23c021;"></i><i class="fa-solid fa-star" style="color: #23c021;"></i><i class="fa-solid fa-star" style="color: #23c021;"></i><i class="fa-solid fa-star" style="color: #23c021;"></i></p>
+                    <p class="card-text">$3.12</p>
+                    <a href="#" class="btn btn-white"  style="border: solid orange; border-radius: 20px;"><i class="fa-solid fa-cart-shopping" style="color: #40b329;"></i>Add cart</a>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+       
+        </div>
+        <div class="col-lg-4">
+          <div class="card mb-4" style="max-width: 400px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="./imgs/o1.jpg" class="img-fluid rounded-start " alt="..." width="100%" height="500px">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Orange</h5>
+                    <p class="card-text"><i class="fa-solid fa-star" style="color: #23c021;"></i><i class="fa-solid fa-star" style="color: #23c021;"></i><i class="fa-solid fa-star" style="color: #23c021;"></i><i class="fa-solid fa-star" style="color: #23c021;"></i><i class="fa-solid fa-star" style="color: #23c021;"></i></p>
+                    <p class="card-text">$3.12</p>
+                    <a href="#" class="btn btn-white"  style="border: solid orange; border-radius: 20px;"><i class="fa-solid fa-cart-shopping" style="color: #40b329;"></i>Add cart</a>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+  
+      </div>
+      <div class="row m-5">
+        <div class="col-lg-3">
+            <img src="./imgs/grapes.jpg" alt="" style="width: 100%; height: 200px; border-radius: 10px;">
+        </div>
+        <div class="col-lg-3">
+            <img src="./imgs/orange.jpg" alt="" style="width: 100%; height: 200px; border-radius: 10px;">
+        </div>
+        <div class="col-lg-3">
+            <img src="./imgs/grp2.jpg" alt="" style="width: 100%; height: 200px; border-radius: 10px;">
+        </div>
+        <div class="col-lg-3">
+            <img src="./imgs/banana.jpg" alt="" style="width: 100%; height: 200px; border-radius: 10px;">
+        </div>
+      </div>
+    
+</div>
+
+<div class="crd1 ms-5 mb-5 mt-5">
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="card text-center mt-5 mb-5  bg-light" style="width: 18rem;">
+               <i class="fa-solid fa-person-dress fa-4x mt-5" style="color: #c8701e;"></i>
+                <div class="card-body text-center">
+                  <h5 class="card-title text-success">SATISFIED CUSTOMERS</h5>
+                  <p class="card-text mb-5">1963</p>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="col-lg-3">
+                <div class="card text-center mt-5 mb-5  bg-light" style="width: 18rem;">
+                    <i class="fa-solid fa-person-dress fa-4x mt-5" style="color: #c8701e;"></i>
+                    <div class="card-body text-center">
+                      <h5 class="card-title text-success">QUALITY SERVICES</h5>
+                      <p class="card-text mb-5">1963</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="col-lg-3">
+                <div class="card text-center mt-5 mb-5 bg-light" style="width: 18rem;">
+                    <i class="fa-solid fa-person-dress fa-4x mt-5" style="color: #c8701e;"></i>                    <div class="card-body text-center">
+                      <h5 class="card-title text-success">QUALITY CERTIFICATE</h5>
+                      <p class="card-text mb-5">1963</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="col-lg-3">
+                <div class="card text-center mt-5 mb-5  bg-light" style="width: 18rem;">
+                    <i class="fa-solid fa-person-dress fa-4x mt-5" style="color: #c8701e;"></i>                    <div class="card-body text-center">
+                      <h5 class="card-title text-success">AVAILABLE PRODUCTS</h5>
+                      <p class="card-text mb-5">1963</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</div>
+</div>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Company name
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Angular</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">React</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Vue</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Laravel</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+    
+
+</html>
